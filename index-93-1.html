@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading-methods of JQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+        $('button').click(function () {
+          var p3 = $('p').eq(2);
+          var p5 = $('p').eq(4);
+          p3.animate({ right: '100px'}, 'slow');
+          p5.animate({ right: '100px' }, 'slow');
+        });
+
+        $('img').click(function () {
+          $(this).animate({ marginTop: '100px' }, 'slow');
+        });
+      });
+  </script>
+  <style type="text/css">
+    body
+    {
+      background-color: rgb(244, 235, 223);
+    }
+    div
+    {     
+      width: 1000px;
+      box-shadow: 2px 2px 20px gray; 
+      background:
+      linear-gradient(217deg, rgba(191, 152, 104, 0.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(232, 218, 204, 0.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(160, 133, 97, 0.8), rgba(0,0,255,0) 70.71%);
+
+    }
+    p 
+    {
+      margin-left: 120px;
+      width: 800px;
+      text-indent: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      position: relative;
+    }
+    img
+    {
+      position: relative;
+      left: 450px;
+    }
+    button
+    {
+      margin-top: 30px;
+      margin-left: 430px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <button>Выбрать 3-й и 5-й абзацы</button>
+  <p>
+    Пешеходов надо любить. Пешеходы составляют большую часть человечества. Мало того – лучшую его часть. Пешеходы создали
+    мир. Это они построили города, возвели многоэтажные здания, провели канализацию и водопровод, замостили улицы и осветили
+    их электрическими лампами. Это они распространили культуру по всему свету, изобрели книгопечатание, выдумали порох,
+    перебросили мосты через реки, расшифровали египетские иероглифы, ввели в употребление безопасную бритву, уничтожили
+    торговлю рабами и установили, что из бобов сои можно изготовить 114 вкусных питательных блюд.
+  </p>
+  <img src="picture/pic1.png">
+  <p>
+    И когда все было готово, когда родная планета приняла сравнительно благоустроенный вид, появились автомобилисты.
+  </p>
+  <img src="picture/pic1.png">
+  <p>
+    Надо заметить, что автомобиль тоже был изобретен пешеходом. Но автомобилисты об этом как-то сразу забыли. Кротких и
+    умных пешеходов стали давить. Улицы, созданные пешеходами, перешли во власть автомобилистов. Мостовые стали вдвое шире,
+    тротуары сузились до размера табачной бандероли. И пешеходы стали испуганно жаться к стенам домов.
+  </p>
+  <img src="picture/pic1.png">
+  <p>
+    В большом городе пешеходы ведут мученическую жизнь. Для них ввели некое транспортное гетто. Им разрешают переходить
+    улицы только на перекрестках, то есть именно в тех местах, где движение сильнее всего и где волосок, на котором обычно
+    висит жизнь пешехода, легче всего оборвать.
+  </p>
+  <img src="picture/pic1.png">
+  <p>
+    В нашей обширной стране обыкновенный автомобиль, предназначенный, по мысли пешеходов, для мирной перевозки людей и
+    грузов, принял грозные очертания братоубийственного снаряда. Он выводит из строя целые шеренги членов профсоюзов и их
+    семей.
+  </p>
+  </div>
+</body>
+</html>
